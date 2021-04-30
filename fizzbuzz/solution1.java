@@ -21,6 +21,8 @@ public class solution1
 	}
 }
 //This solution does work
-
+//But it is very difficult to read
+//Hard to implement changes
+//Also has too much boolean logic
 
 
