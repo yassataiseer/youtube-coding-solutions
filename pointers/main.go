@@ -1,14 +1,13 @@
 package main
-
 import "fmt"
-func main() {
-  	x:=15
-  	a := &x//memory address
-  	fmt.Println(a)
-  	fmt.Println(*a)
-	*a = 5
+func main(){
+	age :=44
+	fmt.Println(age)
+	x := &age //memory address
 	fmt.Println(x)
-	*a = *a**a
+	age = 20
 	fmt.Println(x)
-
+	fmt.Println(*x)
+	fmt.Println(*x+35)
 }
+
