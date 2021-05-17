@@ -1,10 +1,16 @@
 package main
 import "fmt"
-import "strconv"
 func main(){
-	var age = 5;
-	var data = "Hello, my age is ";
-	fmt.Println(data +strconv.Itoa(age));
-
+    var first int
+    fmt.Println("Enter Your First Number: ")
+    fmt.Scanln(&first)
+    var scnd int
+    fmt.Println("Enter Your Secound Number: ")
+    fmt.Scanln(&scnd)
+	fmt.Println("Your answer is:")
+	fmt.Println(add(first,scnd));
+}
+func add( x int, y int) int{
+	return x+y
 }
 
