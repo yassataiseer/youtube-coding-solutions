@@ -15,12 +15,10 @@ func main(){
 	if err != nil{
 		panic(err)
 	}
-
-	exec,err:=  db.Query("INSERT INTO Users (Name,Password) VALUES (?,?)", ("Clark Kent"),("Superman123")) 
+	exec,err:= db.Query("INSERT INTO Users (Name,Password) VALUES(?,?)",("Clark Kent"),("Superman"))
 	if err != nil{
 		panic(err)
 	}
 	fmt.Println(exec)
 	defer db.Close()
-
 }
