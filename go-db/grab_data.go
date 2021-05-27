@@ -18,7 +18,7 @@ type User_data struct {
 
 
 func main(){
-	db,err :=sql.Open("mysql","root:new_password@tcp(127.0.0.1:3306)/golangdb")
+	db,err :=sql.Open("mysql","YOUR_NAME:YOUR_PSSWD@tcp(YOUR_IP_ADDRESS)/YOUR DB NAME")
 	if err != nil{
 		panic(err)
 	}
