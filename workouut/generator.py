@@ -7,8 +7,7 @@ def calculate(*args):
         for workout in args:
             string = ""
             for options in workout:
-                print(len(workout[options]))
-                random_index =  random.randint(1, len(workout[options])-1)
+                random_index =  random.randint(0, len(workout[options])-1)
                 string+=workout[options][random_index] +", "
             workouts.append(string)
         counter+=1
