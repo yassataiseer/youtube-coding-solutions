@@ -46,14 +46,14 @@ class calculate:
         else:
             return "Error,var does not exist"
 
-    def add_vars(self,new_var_name,*args):
+    def add_vars(self,new_var_name,args):
         string = new_var_name+" = "
         added_vars = ""
         for i in args:
             if calculate.check_var(self.filename,i):
                 added_vars+=i+"+"
             else:
-                return "Error you variable is not found"
+                return False
         added_vars = added_vars[0:-1]
         string += added_vars
         f = open(self.filename+".py","a")
@@ -61,6 +61,7 @@ class calculate:
         f.write(string)
         f.write("\n")
         f.close()
+        return True
     def add_import(self,module):
         string = "import "+module+"\n"
         with open(self.filename+".py") as f: 
@@ -91,8 +92,35 @@ while True:
             print("Succesfully done!")
         else:
             print("ERROR!!!!")
-        
-    break
+    elif userinput=="2":
+        variable = input("What is the name of the variable needed to delete: ")
+        if(object.delete_variable(variable)):
+            print("Succesfully done!")
+        else:
+            print("ERROR!!!!")
+    elif userinput=="3":
+        variable = input("What is the name of the variable needed to show: ")
+        if(object.show_var(variable)):
+            print("Succesfully done!")
+        else:
+            print("ERROR!!!!")
+    elif userinput=="4":
+        variable = input("What is the name of the library you want to add: ")
+        if(object.add_import(variable)):
+            print("Succesfully done!")
+        else:
+            print("ERROR!!!!")   
+    elif userinput=="5":
+        var_name = input("What is the name of the new variable: ")
+        variable = input("Type all of the variables you want to add seperated via comma: ")
+        variable = variable.split(",")
+        if (object.add_vars(var_name,variable)):
+            print("Succesfully done!")
+        else:
+            print("ERROR!!!!")
+          
+    else:
+        break
 
 
 #initialize = calculate("test")
