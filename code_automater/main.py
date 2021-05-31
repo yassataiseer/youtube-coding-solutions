@@ -73,12 +73,12 @@ class calculate:
         return True
 
 
-initialize = calculate("test")
-initialize.create_variable("Name","'Yassa taiseer'")
-initialize.create_variable("Name1","'Bruce wayne'")
-initialize.delete_variable("Name1")
-initialize.show_var("Name")
-initialize.add_import("pygame")
+#initialize = calculate("test")
+#initialize.create_variable("Name","'Yassa taiseer'")
+#initialize.create_variable("Name1","'Bruce wayne'")
+#initialize.delete_variable("Name1")
+#initialize.show_var("Name")
+#initialize.add_import("pygame")
 
 
 
