@@ -72,6 +72,28 @@ class calculate:
             f.close()
         return True
 
+filename = input("Please enter name of your file: ")
+while True:
+    object = calculate(filename)
+    print("------------------")
+    print("Press 1 to create a variable")
+    print("Press 2 to delete a variable")
+    print("Press 3 to show a variable")
+    print("Press 4 to add a library")
+    print("Press 5 to add variables together ")
+    print("Press anything else to quit")
+
+    userinput = input()
+    if userinput=="1":
+        variable = input("What is the name of the variable: ")
+        value = input("What is the value of the variable: ")
+        if(object.create_variable(variable,value)):
+            print("Succesfully done!")
+        else:
+            print("ERROR!!!!")
+        
+    break
+
 
 #initialize = calculate("test")
 #initialize.create_variable("Name","'Yassa taiseer'")
