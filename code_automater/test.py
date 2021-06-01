@@ -1,7 +1,7 @@
 import pygame
 Name='Yassa'
-ScndName='Bruce Wayne'
+Name2='Bruce Wayne'
 
-added_var = Name+ScndName
+New_Var = Name+Name2
 
-print(added_var)
+print(New_Var)

@@ -43,8 +43,9 @@ class calculate:
             f.write(string)
             f.write("\n")
             f.close()
+            return True
         else:
-            return "Error,var does not exist"
+            return False
 
     def add_vars(self,new_var_name,args):
         string = new_var_name+" = "
