@@ -2,19 +2,32 @@
 #include <vector>
 #include <string>
 using namespace std;
-//Run cmnds below:
-//g++ -std=c++14 main.cpp -o main
-//./main
 
+class GroceryStore{
+    public:
+        string item1;
+        int price1;
+        int wallet_money;
+        GroceryStore(string item, int price, int wallet){
+            item1 = item;
+            price1 = price;
+            wallet_money = wallet;
+        }
+        bool Check(){
+            if(price1>wallet_money){
+                cout << "You cannot afford "<< item1 << endl; 
+                return false;
+            }
+            else{
+                cout << "You can afford "<< item1 << endl;
+                return true;
+            }
+        }
+};
 
 int main()
 {
-    vector <int>new_vector = {1,2,3,4,5};
-    vector <int>vector_2(6,18);
-    cout << new_vector.size()<<endl;
-    new_vector.push_back(6);
-    cout << new_vector.at(5)<<endl;
-    cout << new_vector.size()<<endl;
-
+    GroceryStore Bob("Milk",20,15);
+    Bob.Check();
     return 0;
 }
