@@ -54,6 +54,12 @@ func signup_user(w http.ResponseWriter, r *http.Request){
 	fmt.Println(Username," ",Password)
 	if(add_user(Username[0],Password[0])){
 		var tmplt = template.Must(template.ParseFiles("templates/index.html"))
+		user := http.Cookie{
+			Name: "Username", Value: Username[0],
+		}
+		http.SetCookie(w, &user)
+		var cookie = user.Value
+		fmt.Println("COOKIE: "+cookie)
 		tmplt.Execute(w,nil)
 	}else{
 		var tmplt = template.Must(template.ParseFiles("templates/error.html"))
@@ -68,6 +74,12 @@ func login_user(w http.ResponseWriter, r *http.Request){
 	fmt.Println(Username," ",Password)
 	if(check_user(Username[0],Password[0])){
 		var tmplt = template.Must(template.ParseFiles("templates/index.html"))
+		user := http.Cookie{
+			Name: "Username", Value: Username[0],
+		}
+		http.SetCookie(w, &user)
+		var cookie = user.Value
+		fmt.Println("COOKIE: "+cookie)
 		tmplt.Execute(w,nil)
 	}else{
 		var tmplt = template.Must(template.ParseFiles("templates/error.html"))
