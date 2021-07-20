@@ -9,6 +9,37 @@ import (
 )
 
 
+type user_data struct{
+	Username string
+	Password string
+}
+
+func grab_users() []user_data{
+	db,err := sql.Open("mysql","root:new_password@tcp(127.0.0.1)/mockweb")
+	if err!= nil{
+		panic(err)
+	}
+	rows,err := db.Query("SELECT * FROM Users")
+	if(err!=nil){
+		panic(err)
+	}	
+	var username string
+	var password string
+	var user_rows []user_data
+	for rows.Next(){
+		err := rows.Scan(&username,&password)
+		if(err!=nil){
+			panic(err)
+		}
+		user_rows = append(user_rows, user_data{Username: username, Password: password})
+	}
+	defer db.Close()
+	return user_rows
+}
+
+
+
+
 func add_user(Username string, password string)bool{
 	db,err := sql.Open("mysql","root:new_password@tcp(127.0.0.1)/mockweb")
 	if err!= nil{
@@ -60,7 +91,8 @@ func signup_user(w http.ResponseWriter, r *http.Request){
 		http.SetCookie(w, &user)
 		var cookie = user.Value
 		fmt.Println("COOKIE: "+cookie)
-		tmplt.Execute(w,nil)
+		var user_data = grab_users()
+		tmplt.Execute(w,user_data)
 	}else{
 		var tmplt = template.Must(template.ParseFiles("templates/error.html"))
 		tmplt.Execute(w,nil)
@@ -80,7 +112,9 @@ func login_user(w http.ResponseWriter, r *http.Request){
 		http.SetCookie(w, &user)
 		var cookie = user.Value
 		fmt.Println("COOKIE: "+cookie)
-		tmplt.Execute(w,nil)
+		var user_data = grab_users()
+
+		tmplt.Execute(w,user_data) 
 	}else{
 		var tmplt = template.Must(template.ParseFiles("templates/error.html"))
 		tmplt.Execute(w,nil)
