@@ -1,0 +1,15 @@
+/Users/yassa/vidscode/c#tutorial/bin/Debug/net5.0/c#tutorial.deps.json
+/Users/yassa/vidscode/c#tutorial/bin/Debug/net5.0/c#tutorial.runtimeconfig.json
+/Users/yassa/vidscode/c#tutorial/bin/Debug/net5.0/c#tutorial.runtimeconfig.dev.json
+/Users/yassa/vidscode/c#tutorial/bin/Debug/net5.0/c#tutorial.dll
+/Users/yassa/vidscode/c#tutorial/bin/Debug/net5.0/ref/c#tutorial.dll
+/Users/yassa/vidscode/c#tutorial/bin/Debug/net5.0/c#tutorial.pdb
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.csprojAssemblyReference.cache
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.AssemblyInfoInputs.cache
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.AssemblyInfo.cs
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.csproj.CoreCompileInputs.cache
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.dll
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/ref/c#tutorial.dll
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.pdb
+/Users/yassa/vidscode/c#tutorial/obj/Debug/net5.0/c#tutorial.genruntimeconfig.cache
