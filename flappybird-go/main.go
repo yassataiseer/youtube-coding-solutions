@@ -25,7 +25,7 @@ func main() {
 	screenWidth := int32(800)
 	screenHeight := int32(450)
 
-	rl.InitWindow(screenWidth, screenHeight, "raylib [shapes] example - basic shapes drawing")
+	rl.InitWindow(screenWidth, screenHeight, "FlappyApples")
 
 	rl.SetTargetFPS(60)
 	bird_down := rl.LoadImage("assets/bird-down.png")
