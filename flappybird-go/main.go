@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/gen2brain/raylib-go/raylib"
-	//"strconv"
-	"time"
-    "math/rand"
 	"fmt"
+	"math/rand"
+	"strconv"
+	"time"
+
+	"github.com/gen2brain/raylib-go/raylib"
 )
 
 
@@ -38,12 +39,14 @@ func main() {
 	fmt.Println("======================")
 	fmt.Println(pipe_loc)
 	fmt.Println("======================")
-
-	current_pipe:=Pipe{screenWidth/2-texture.Width/2, int32(pipe_loc), 25, 25, rl.Red};
+	Pipes:= []Pipe{}
+	current_pipes:=Pipe{800, int32(pipe_loc), 25, 25, rl.Red};
+	Pipes = append(Pipes,current_pipes)
+	var score int = 0
 	for !rl.WindowShouldClose() {
-		fmt.Println(y_coords)
+		//fmt.Println(y_coords)
 		rl.BeginDrawing()
-
+		rl.DrawText("The current score is: "+strconv.Itoa(score), 0, 0, 30, rl.LightGray)
 		if rl.IsKeyDown(rl.KeySpace){
 			texture= rl.LoadTextureFromImage(bird_up)
 			y_coords=y_coords-5
@@ -51,13 +54,29 @@ func main() {
 			texture= rl.LoadTextureFromImage(bird_down)
 			y_coords=y_coords+5
 		}
+		for io,current_pipe := range Pipes{
+
+		fmt.Println(current_pipe.posX)
+		fmt.Println(io)
 		rl.DrawRectangle(current_pipe.posX,current_pipe.posY,current_pipe.width,current_pipe.height,current_pipe.Color)
 
 		rl.DrawTexture(texture,x_coords, y_coords, rl.White)
+		Pipes[io].posX = Pipes[io].posX-5
+		if(current_pipe.posX <0){
 
-		if rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords), float32(y_coords),float32(34), float32(24)),rl.NewRectangle(float32(current_pipe.posX),float32(current_pipe.posY),float32(current_pipe.width),float32(current_pipe.height))){
-			rl.DrawText("Game is over", 100, 120, 60, rl.LightGray)
+			//Pipes[io] = Pipe{800, int32(pipe_loc), 25, 25, rl.Red}
+			Pipes[io].posX = 800
+			Pipes[io].posY = int32(rand.Intn(450 -2+1)-2)
+			score--
+			//Pipes = append(Pipes,current_pipes)
 		}
+		if rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords), float32(y_coords),float32(34), float32(24)),rl.NewRectangle(float32(current_pipe.posX),float32(current_pipe.posY),float32(current_pipe.width),float32(current_pipe.height))){
+			
+			Pipes[io].posX = 800
+			Pipes[io].posY = int32(rand.Intn(450 -2+1)-2)
+			score++
+		}
+	}
 		rl.ClearBackground(rl.RayWhite)
 		
 		
@@ -65,8 +84,9 @@ func main() {
 
 
 		if(y_coords>=450){
-			rl.DrawText("Game is over", 100, 120, 60, rl.LightGray)
-			rl.CloseWindow()
+			rl.UnloadTexture(texture)
+			Pipes = nil
+			rl.DrawText("Game is over"+" your score was: "+strconv.Itoa(score), 30, 40, 40, rl.Red)
 
 		}
 		rl.EndDrawing()
