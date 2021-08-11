@@ -24,10 +24,12 @@ type Pipe struct {
 func main() {
 	screenWidth := int32(800)
 	screenHeight := int32(450)
-
+	rl.InitAudioDevice() 
+	eat_noise := rl.LoadSound("sound/eat.wav") 
 	rl.InitWindow(screenWidth, screenHeight, "FlappyApples")
-
+	
 	rl.SetTargetFPS(60)
+	rl.SetSoundVolume(eat_noise, 0.2)
 	bird_down := rl.LoadImage("assets/bird-down.png")
 	bird_up := rl.LoadImage("assets/bird-up.png")	
 	texture:= rl.LoadTextureFromImage(bird_up)
@@ -71,7 +73,7 @@ func main() {
 			//Pipes = append(Pipes,current_pipes)
 		}
 		if rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords), float32(y_coords),float32(34), float32(24)),rl.NewRectangle(float32(current_pipe.posX),float32(current_pipe.posY),float32(current_pipe.width),float32(current_pipe.height))){
-			
+			rl.PlaySoundMulti(eat_noise)
 			Pipes[io].posX = 800
 			Pipes[io].posY = int32(rand.Intn(450 -2+1)-2)
 			score++
@@ -93,6 +95,10 @@ func main() {
 		time.Sleep(50000000)
 
 	}
+	rl.StopSoundMulti() // We must stop the buffer pool before unloading
 
+	rl.UnloadSound(eat_noise) // Unload sound data
+
+	rl.CloseAudioDevice()
 	rl.CloseWindow()
 }
