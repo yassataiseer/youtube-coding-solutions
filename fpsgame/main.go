@@ -129,11 +129,15 @@ func main() {
 						fmt.Println("============")
 						fmt.Println(side)
 						if(side==1){
-							new_enemy1 := Enemy{0,370,5,current_enemy.Damage*2,true,true,rl.White}
+							new_enemy1 := Enemy{0,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
+							new_enemy2 := Enemy{800,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
 							Enemies = append(Enemies, new_enemy1)
+							Enemies = append(Enemies, new_enemy2)
 						}else{
-							new_enemy1 := Enemy{800,370,5,current_enemy.Damage*2,true,true,rl.White}
+							new_enemy1 := Enemy{800,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
+							new_enemy2 := Enemy{800,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
 							Enemies = append(Enemies, new_enemy1)
+							Enemies = append(Enemies, new_enemy2)
 						}
 						Score++
 						bullets[index1]=Bullet{}
