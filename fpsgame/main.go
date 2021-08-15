@@ -3,8 +3,7 @@ package main
 import (
 	"fmt"
 	"strconv"
-	"math/rand"
-	"time"
+
 	"github.com/gen2brain/raylib-go/raylib"
 )
 
@@ -124,21 +123,12 @@ func main() {
 				for index1,current_bullet := range bullets {
 					if rl.CheckCollisionRecs(rl.NewRectangle(float32(current_bullet.posX),float32(current_bullet.posY),float32(current_bullet.radius),float32(current_bullet.radius)),rl.NewRectangle(float32(current_enemy.posX),float32(current_enemy.posY),float32(50),float32(50))){
 						Enemies[index].Draw=false
-						rand.Seed(time.Now().UnixNano())
-						var side int = rand.Intn(2)
-						fmt.Println("============")
-						fmt.Println(side)
-						if(side==1){
+
 							new_enemy1 := Enemy{0,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
 							new_enemy2 := Enemy{800,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
 							Enemies = append(Enemies, new_enemy1)
 							Enemies = append(Enemies, new_enemy2)
-						}else{
-							new_enemy1 := Enemy{800,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
-							new_enemy2 := Enemy{800,370,current_enemy.velocity+1,current_enemy.Damage*2,true,true,rl.White}
-							Enemies = append(Enemies, new_enemy1)
-							Enemies = append(Enemies, new_enemy2)
-						}
+
 						Score++
 						bullets[index1]=Bullet{}
 						should_shoot=true
