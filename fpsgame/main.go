@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"strconv"
-
 	"github.com/gen2brain/raylib-go/raylib"
 )
 
