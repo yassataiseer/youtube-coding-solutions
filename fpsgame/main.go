@@ -33,11 +33,7 @@ type Enemy struct{
 }
 
 
-func RemoveIndex(bullets []Bullet, index int) []Bullet {
-    ret := make([]Bullet, 0)
-    ret = append(ret, bullets[:index]...)
-    return append(ret, bullets[index+1:]...)
-}
+
 
 
 func main() {
