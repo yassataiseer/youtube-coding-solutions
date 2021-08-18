@@ -56,7 +56,7 @@ func main() {
 	Enemies :=[]Enemy{}
 	RightGoomba := rl.LoadImage("assets/leftgoomba.png")
 	LeftGoomba := rl.LoadImage("assets/rightgoomba.png")
-	first_enemy :=Enemy{0,370,5,0.5,true,true,rl.White}
+	first_enemy :=Enemy{0,370,5,1,true,true,rl.White}
 	Enemies = append(Enemies, first_enemy)
 	Enemy_texture:=rl.LoadTextureFromImage(RightGoomba)
 	texture := rl.LoadTextureFromImage(Character)
