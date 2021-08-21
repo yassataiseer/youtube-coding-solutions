@@ -55,7 +55,6 @@ func main(){
 		rl.EndDrawing()
 		rl.DrawTexture(Ship,x_coords,y_coords,rl.White)
 		for index,current_enemy := range Enemies{
-			
 			if(Enemies[index].draw){
 				if(current_enemy.image_down){
 					Enemies[index].image_down=false
@@ -65,15 +64,11 @@ func main(){
 					rl.DrawTexture(EnemyDown,current_enemy.posX,current_enemy.posY,rl.White)
 					Enemies[index].image_down=true
 				}
-				if(current_enemy.posX==0){
-					Enemies[index].posY += 5
-					fmt.Println("detect")
-
-				}
-				if(current_enemy.posX==screenWidth){
+				if(current_enemy.posX==0||current_enemy.posX==screenWidth){
 					for i,_ := range Enemies{
 						Enemies[i].posY+=5
 					}
+					fmt.Println("detect")
 
 				}
 
@@ -85,20 +80,26 @@ func main(){
 				
 				Enemies[index].posX += Enemy_speed
 			}
-			
 			time.Sleep(5000000)
-		}
-		for index1,current_bullet := range bullets {
-			if(current_bullet.Draw){
-				rl.DrawCircle(current_bullet.posX-16, current_bullet.posY, current_bullet.radius, current_bullet.Color)
-				bullets[index1].posY = bullets[index1].posY-20
-				if(current_bullet.posY<0){
-					shouldShoot=true
-					bullets[index1].Draw=false
-					
+
+			
+			for index1,current_bullet := range bullets {
+				if(current_bullet.Draw){
+					bullets[index1].posY = bullets[index1].posY-5
+					rl.DrawCircle(current_bullet.posX-16, current_bullet.posY, current_bullet.radius, current_bullet.Color)
+					if(current_bullet.posY<0){
+						shouldShoot=true
+						bullets[index1].Draw=false
+					}
+					if rl.CheckCollisionRecs(rl.NewRectangle(float32(current_bullet.posX),float32(current_bullet.posY),float32(current_bullet.radius),float32(current_bullet.radius)),rl.NewRectangle(float32(current_enemy.posX),float32(current_enemy.posY),float32(48),float32(32))){
+						Enemies[index].draw = false
+					}
+
 				}
+				
 			}
 		}
+
 
 		if rl.IsKeyDown(rl.KeyD){
 			if(x_coords+1>=screenWidth){
