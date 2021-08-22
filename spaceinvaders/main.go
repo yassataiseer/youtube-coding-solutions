@@ -115,7 +115,7 @@ func main(){
 						bullets[index1].Draw=false
 					}
 					if rl.CheckCollisionRecs(rl.NewRectangle(float32(current_bullet.posX),float32(current_bullet.posY),float32(current_bullet.radius),float32(current_bullet.radius)),
-					rl.NewRectangle(float32(current_enemy.posX),float32(current_enemy.posY),float32(48),float32(32)))&&current_bullet.Color==rl.White&&current_enemy.draw{
+					rl.NewRectangle(float32(current_enemy.posX),float32(current_enemy.posY),float32(60),float32(32)))&&current_bullet.Color==rl.White&&current_enemy.draw{
 						Enemies[index].draw = false
 						score+=50
 						enemies_Alive--

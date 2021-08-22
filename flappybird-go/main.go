@@ -12,7 +12,7 @@ type Apple struct {
   height int32
   Color rl.Color
 }
-func main() {
+func main() { 
     screenWidth := int32(800)
     screenHeight := int32(450)
     rl.InitAudioDevice()
