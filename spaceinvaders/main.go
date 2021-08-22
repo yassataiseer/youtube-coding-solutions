@@ -69,8 +69,9 @@ func main(){
 			rl.DrawText("Your final score is: "+strconv.Itoa(score),30,40,30,rl.White)
 			rl.DrawText("Press Enter to restart ",30,80,30,rl.White)
 			if rl.IsKeyDown(rl.KeyEnter){
+				rl.CloseWindow()
 				main()
-			}
+			}else{}
 		
 		}
 		for index,current_enemy := range Enemies{
