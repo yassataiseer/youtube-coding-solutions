@@ -111,7 +111,7 @@ func main(){
 				if(current_bullet.Draw){
 					bullets[index1].posY = bullets[index1].posY - current_bullet.velocity
 					rl.DrawCircle(current_bullet.posX-16, current_bullet.posY, current_bullet.radius, current_bullet.Color)
-					if(current_bullet.posY<0){
+					if(current_bullet.posY<0||current_bullet.posY>screenHeight){
 						shouldShoot=true
 						bullets[index1].Draw=false
 					}
