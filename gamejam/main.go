@@ -20,7 +20,7 @@ func randomLeaf() Leaf {
 	leaf_colors:= [4]string{"red","green","purple","yellow"}
 	leaf_locations:= [8]int32{1,70,160,210,280,360,500,580}
 	
-	var index int32 = int32(rand.Intn(3))
+	var index int32 = int32(rand.Intn(4))
 	var points int32 
 	var velocity int32
 	var color string
@@ -133,7 +133,22 @@ func main() {
 		rl.DrawText("Score: "+strconv.Itoa(Score), 0, 0, 20, rl.Black)
 		rl.DrawText("Health: "+strconv.Itoa(Health), 450, 0, 20, rl.Black)
 
-
+		if(Health<=0){
+			Leafs = nil
+			x_coords=1000000
+			rl.UnloadTexture(character)
+			rl.UnloadTexture(redleaf)
+			rl.UnloadTexture(greenleaf)
+			rl.UnloadTexture(yellowleaf)
+			rl.UnloadTexture(purpleleaf)
+			rl.ClearBackground(rl.White)
+			rl.DrawText("Your final score is: "+strconv.Itoa(Score),30,40,30,rl.Black)
+			rl.DrawText("Press Enter to restart ",30,80,30,rl.Black)
+			if rl.IsKeyDown(rl.KeyEnter){
+				rl.CloseWindow()
+				main()
+			}else{}
+		}
 		rl.EndDrawing()
 	}
 
