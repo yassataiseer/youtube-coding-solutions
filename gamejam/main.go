@@ -1,17 +1,50 @@
 package main
 
-import "github.com/gen2brain/raylib-go/raylib"
+import (
+	"math/rand"
+	"time"
+
+	"github.com/gen2brain/raylib-go/raylib"
+)
 
 type Leaf struct {
 	posX int32
 	posY int32
-	width int32
-	height int32
-	Color rl.Color
+	points int32
+	velocity int32
+	color string
   }
 
-
-
+func randomLeaf() Leaf {
+	rand.Seed(time.Now().UnixNano())
+	leaf_colors:= [4]string{"red","green","purple","yellow"}
+	leaf_locations:= [8]int32{1,70,160,210,280,360,500,580}
+	
+	var index int32 = int32(rand.Intn(3))
+	var points int32 
+	var velocity int32
+	var color string
+	if(leaf_colors[index]=="red"){
+		points = 3
+		color = "red"
+		velocity = 3
+	}else if(leaf_colors[index]=="green"){
+		points = 7
+		color = "green"
+		velocity = 7
+	}else if(leaf_colors[index]=="yellow"){
+		points = 5
+		color = "yellow"
+		velocity = 5
+	}else{
+		points = -5
+		color = "purple"
+		velocity = 1
+	}
+	var Xpos int32 = leaf_locations[int32(rand.Intn(8))]
+	current_leaf := Leaf{Xpos,0,points,velocity,color}
+	return current_leaf
+}
 
 func main() {
 	screenWidth := int32(600)
@@ -21,7 +54,15 @@ func main() {
 	var x_coords int32 = 2
 	var y_coords int32 = 325
 	var playerVel int32 = 5
-
+	Leafs := []Leaf{}
+	
+	var times int = 9
+	for times!=0{
+		current_leaf := randomLeaf()
+		Leafs = append(Leafs, current_leaf)
+		times--
+	}
+	
 	rl.SetTargetFPS(60)
 	character_img := rl.LoadImage("assets/character.png")
 	character := rl.LoadTextureFromImage(character_img)
@@ -40,16 +81,27 @@ func main() {
 	greenleaf := rl.LoadTextureFromImage(greenleaf_img)
 	purpleleaf := rl.LoadTextureFromImage(purpleleaf_img)
 	yellowleaf := rl.LoadTextureFromImage(yellowleaf_img)
-
+	
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
 		rl.DrawTexture(character,x_coords,y_coords,rl.White)
-		rl.DrawTexture(redleaf, 0, 0, rl.White)
-		rl.DrawTexture(greenleaf, 80, 0, rl.White)
-		rl.DrawTexture(purpleleaf, 170, 0, rl.White)
-		rl.DrawTexture(yellowleaf, 240, 0, rl.White)
 
 		rl.ClearBackground(rl.White)
+
+		for index,current_leaf := range Leafs{
+			if(current_leaf.color=="red"){
+				rl.DrawTexture(redleaf, current_leaf.posX, current_leaf.posY, rl.White)
+			}else if(current_leaf.color=="green"){
+				rl.DrawTexture(greenleaf, current_leaf.posX, current_leaf.posY, rl.White)
+			}else if(current_leaf.color=="yellow"){
+				rl.DrawTexture(yellowleaf, current_leaf.posX, current_leaf.posY, rl.White)
+			}else {
+				rl.DrawTexture(purpleleaf, current_leaf.posX, current_leaf.posY, rl.White)
+			}
+			Leafs[index].posY += current_leaf.velocity
+														
+		}
+
 
 		if rl.IsKeyDown(rl.KeySpace)&&y_coords>-30{
 			y_coords-=playerVel
