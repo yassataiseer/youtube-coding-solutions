@@ -57,6 +57,7 @@ func main() {
 	Leafs := []Leaf{}
 	var Score int = 0
 	var times int = 9
+	var Health int = 100
 	for times!=0{
 		current_leaf := randomLeaf()
 		Leafs = append(Leafs, current_leaf)
@@ -109,6 +110,9 @@ func main() {
 			rl.NewRectangle(float32(current_leaf.posX),float32(current_leaf.posY),float32(50),float32(60)))){
 				Leafs[index] = randomLeaf()
 				Score+= int(current_leaf.points) 
+				if(current_leaf.color=="purple"){
+					Health-=10
+				}
 			}
 			
 		}
@@ -127,6 +131,7 @@ func main() {
 		}
 
 		rl.DrawText("Score: "+strconv.Itoa(Score), 0, 0, 20, rl.Black)
+		rl.DrawText("Health: "+strconv.Itoa(Health), 450, 0, 20, rl.Black)
 
 
 		rl.EndDrawing()
