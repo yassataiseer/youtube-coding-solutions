@@ -3,7 +3,7 @@ package main
 import (
 	"math/rand"
 	"time"
-
+	"strconv"
 	"github.com/gen2brain/raylib-go/raylib"
 )
 
@@ -55,7 +55,7 @@ func main() {
 	var y_coords int32 = 325
 	var playerVel int32 = 5
 	Leafs := []Leaf{}
-	
+	var Score int = 0
 	var times int = 9
 	for times!=0{
 		current_leaf := randomLeaf()
@@ -108,7 +108,7 @@ func main() {
 			if(rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords),float32(y_coords),float32(character.Width),float32(character.Height)),
 			rl.NewRectangle(float32(current_leaf.posX),float32(current_leaf.posY),float32(50),float32(60)))){
 				Leafs[index] = randomLeaf()
-
+				Score+= int(current_leaf.points) 
 			}
 			
 		}
@@ -126,7 +126,7 @@ func main() {
 			x_coords+=5
 		}
 
-		rl.DrawText("Score: ", 0, 0, 20, rl.Black)
+		rl.DrawText("Score: "+strconv.Itoa(Score), 0, 0, 20, rl.Black)
 
 
 		rl.EndDrawing()
