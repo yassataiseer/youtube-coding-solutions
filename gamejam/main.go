@@ -65,6 +65,8 @@ func main() {
 	
 	rl.SetTargetFPS(60)
 	character_img := rl.LoadImage("assets/character.png")
+	rl.ImageResize(character_img,int32(83),int32(100))
+
 	character := rl.LoadTextureFromImage(character_img)
 	
 	redleaf_img := rl.LoadImage("assets/redleaf.png")
@@ -89,6 +91,7 @@ func main() {
 		rl.ClearBackground(rl.White)
 
 		for index,current_leaf := range Leafs{
+
 			if(current_leaf.color=="red"){
 				rl.DrawTexture(redleaf, current_leaf.posX, current_leaf.posY, rl.White)
 			}else if(current_leaf.color=="green"){
@@ -101,7 +104,13 @@ func main() {
 			Leafs[index].posY += current_leaf.velocity
 			if(current_leaf.posY>screenHeight){
 				Leafs[index] = randomLeaf()
-			}											
+			}									
+			if(rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords),float32(y_coords),float32(character.Width),float32(character.Height)),
+			rl.NewRectangle(float32(current_leaf.posX),float32(current_leaf.posY),float32(50),float32(60)))){
+				Leafs[index] = randomLeaf()
+
+			}
+			
 		}
 
 
@@ -113,10 +122,11 @@ func main() {
 		if rl.IsKeyDown(rl.KeyA)&&x_coords>-40{
 			x_coords-=5
 		}
-		if rl.IsKeyDown(rl.KeyD)&&x_coords<500{
+		if rl.IsKeyDown(rl.KeyD)&&x_coords<525{
 			x_coords+=5
 		}
 
+		rl.DrawText("Score: ", 0, 0, 20, rl.Black)
 
 
 		rl.EndDrawing()
