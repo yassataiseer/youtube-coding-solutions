@@ -99,7 +99,9 @@ func main() {
 				rl.DrawTexture(purpleleaf, current_leaf.posX, current_leaf.posY, rl.White)
 			}
 			Leafs[index].posY += current_leaf.velocity
-														
+			if(current_leaf.posY>screenHeight){
+				Leafs[index] = randomLeaf()
+			}											
 		}
 
 
