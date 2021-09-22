@@ -128,8 +128,7 @@ func main() {
 		}
 		if rl.IsKeyDown(rl.KeyD)&&x_coords<525{
 			x_coords+=5
-		}
-
+		}d
 		rl.DrawText("Score: "+strconv.Itoa(Score), 0, 0, 20, rl.Black)
 		rl.DrawText("Health: "+strconv.Itoa(Health), 450, 0, 20, rl.Black)
 
