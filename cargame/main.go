@@ -4,6 +4,7 @@ import (
 	"math/rand"
 	"time"
 	"github.com/gen2brain/raylib-go/raylib"
+	"strconv"
 )
 
 type Cars struct {
@@ -12,6 +13,12 @@ type Cars struct {
 	velocity int32
 	color string
   }
+
+type Coins struct {
+	posX int32
+	posY int32
+	velocity int32
+}
 
 func randomCar() Cars {
 	rand.Seed(time.Now().UnixNano())
@@ -65,9 +72,18 @@ func main(){
 	rl.ImageFlipVertical(yellowcar_img)
 	yellowcar := rl.LoadTextureFromImage(yellowcar_img)
 
+	coin_img := rl.LoadImage("assets/coin.png")
+	rl.ImageResize(coin_img,int32(82),int32(82))
+	coin := rl.LoadTextureFromImage(coin_img)
+	
+	car_locations:= [7]int32{1,83,167,250,333,417,501}
+	Coins := Coins{0,car_locations[int32(rand.Intn(7))],2}
+
+
 	var x_coords int32 = 300
 	var y_coords int32 = 450
 	var roadY int32 = 0
+	var score int = 0
 	Cars := []Cars{}
 	var times int = 3
 	for times!=0{
@@ -98,6 +114,18 @@ func main(){
 
 			}
 		}
+		rl.DrawTexture(coin,Coins.posX,Coins.posY,rl.White)
+		Coins.posY +=2
+		if(Coins.posY>screenHeight){
+			Coins.posY=0
+			Coins.posX = car_locations[int32(rand.Intn(7))]
+		}
+		if(rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords),float32(y_coords),float32(82),float32(158)),
+		rl.NewRectangle(float32(Coins.posX),float32(Coins.posY),float32(82),float32(82)))){
+			Coins.posY=0
+			Coins.posX = car_locations[int32(rand.Intn(7))]
+			score++
+		}
 
 		if rl.IsKeyDown(rl.KeyA)&&x_coords>-40{
 			x_coords-=5
@@ -111,6 +139,7 @@ func main(){
 		if rl.IsKeyDown(rl.KeyS)&&y_coords<800{
 			y_coords+=5
 		}
+		rl.DrawText("Score: "+strconv.Itoa(score), 0, 0, 20, rl.Black)
 		rl.EndDrawing()
 	}
 	rl.CloseWindow()
