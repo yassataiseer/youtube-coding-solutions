@@ -91,6 +91,7 @@ func main(){
 		Cars = append(Cars, current_car)
 		times--
 	}
+	var isAlive bool= true
 
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
@@ -111,8 +112,12 @@ func main(){
 			Cars[index].posY += current_car.velocity
 			if (current_car.posY>screenHeight){
 				Cars[index] = randomCar()
-
 			}
+			if(rl.CheckCollisionRecs(rl.NewRectangle(float32(x_coords),float32(y_coords),float32(82),float32(158)),
+			rl.NewRectangle(float32(current_car.posX),float32(current_car.posY),float32(82),float32(158)))){
+				isAlive = false
+			}
+	
 		}
 		rl.DrawTexture(coin,Coins.posX,Coins.posY,rl.White)
 		Coins.posY +=2
@@ -138,6 +143,20 @@ func main(){
 		}
 		if rl.IsKeyDown(rl.KeyS)&&y_coords<800{
 			y_coords+=5
+		}
+
+		if(!isAlive){
+			Cars = nil
+			x_coords=1000000
+			rl.UnloadTexture(redcar)
+			rl.UnloadTexture(greencar)
+			rl.UnloadTexture(yellowcar)
+			rl.UnloadTexture(bluecar)
+			rl.UnloadTexture(road)
+			rl.UnloadTexture(coin)
+			//rl.ClearBackground(rl.White)
+			rl.DrawText("Your final score is: "+strconv.Itoa(score),30,40,30,rl.White)
+
 		}
 		rl.DrawText("Score: "+strconv.Itoa(score), 0, 0, 20, rl.Black)
 		rl.EndDrawing()
