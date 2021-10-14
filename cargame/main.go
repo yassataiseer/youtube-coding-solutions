@@ -96,8 +96,7 @@ func main(){
 	for !rl.WindowShouldClose() {
 		rl.BeginDrawing()
 		rl.DrawTexture(road,0,roadY,rl.White)
-		roadY++
-		if(roadY==50){roadY=0}
+
 		rl.DrawTexture(redcar,x_coords,y_coords,rl.White)
 		rl.ClearBackground(rl.RayWhite)
 
