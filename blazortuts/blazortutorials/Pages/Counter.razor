@@ -1,0 +1,47 @@
+@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+<div class="card">
+<div class="container">
+<EditForm Model="@LoginModel" OnValidSubmit="@HandleValidSumbit">
+<DataAnnotationsValidator/>
+<h3>Username</h3>
+<InputText type="text" id="UserName" @bind-Value="LoginModel.Username"/>
+<br>
+<h3>Password</h3>
+<InputText type="password" id="Password" @bind-Value="LoginModel.Password"/>
+<br>
+<br>
+<button type="submit" class="btn btn-primary">Submit</button>
+<ValidationSummary/>
+</EditForm>
+</div>
+</div>
+
+
+
+
+@code {
+    @inject IJSRuntime JSRuntime;
+
+    private int currentCount = 0;
+    public LoginModel LoginModel = new();
+    private dynamic validate;
+    private void IncrementCount()
+    {
+        Console.WriteLine(currentCount);
+        currentCount++;
+    }
+    private async void HandleValidSumbit(){
+        //Console.WriteLine(LoginModel.Username);
+        //Console.WriteLine(LoginModel.Password);
+        await JSRuntime.InvokeVoidAsync("BlazorSetLocalStorage","Username:",LoginModel.Username);
+        validate = await JSRuntime.InvokeAsync<string>("BlazorGetLocalStorage","Username:");
+        Console.WriteLine(validate);
+    }
+}
