@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -1418973734,
+        "HashCode": 1265029865,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.App",
+        "Name": "blazortutorials.Pages.Counter",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.App"
+          "Common.TypeName": "blazortutorials.Pages.Counter"
         }
       },
       {
-        "HashCode": 349111887,
+        "HashCode": -1991227614,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.App",
+        "Name": "blazortutorials.Pages.Counter",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazortutorials.App"
+            "TagName": "blazortutorials.Pages.Counter"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.App",
+          "Common.TypeName": "blazortutorials.Pages.Counter",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -107,35 +107,35 @@
         }
       },
       {
-        "HashCode": 1265029865,
+        "HashCode": -1418973734,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
+        "Name": "blazortutorials.App",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter"
+          "Common.TypeName": "blazortutorials.App"
         }
       },
       {
-        "HashCode": -1991227614,
+        "HashCode": 349111887,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
+        "Name": "blazortutorials.App",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazortutorials.Pages.Counter"
+            "TagName": "blazortutorials.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter",
+          "Common.TypeName": "blazortutorials.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
