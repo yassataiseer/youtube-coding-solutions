@@ -13,20 +13,6 @@ namespace blazortutorials.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-#line 1 "/Users/yassa/vidscode/blazortuts/blazortutorials/_Imports.razor"
-using System.Net.Http;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
-#line 2 "/Users/yassa/vidscode/blazortuts/blazortutorials/_Imports.razor"
-using System.Net.Http.Json;
-
-#line default
-#line hidden
-#nullable disable
-#nullable restore
 #line 3 "/Users/yassa/vidscode/blazortuts/blazortutorials/_Imports.razor"
 using Microsoft.AspNetCore.Components.Forms;
 
@@ -82,6 +68,48 @@ using blazortutorials.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 35 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+using System.Net.Http;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 36 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+using System.Text;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 37 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+using System.Net.Http.Json;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 38 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+using System.Web;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 39 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+using Newtonsoft.Json.Linq;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 40 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+using Newtonsoft.Json;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {
@@ -90,6 +118,31 @@ using blazortutorials.Shared;
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 40 "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Index.razor"
+                          
+    public List<InventoryModel> InventoryData = new();
+
+    protected override async Task OnInitializedAsync(){
+        using var client = new HttpClient();
+        var result = await client.GetStringAsync("http://0.0.0.0:800/Inventory/grab_Inventory");
+        JArray data = JArray.Parse(result);
+        foreach(dynamic obj in data){
+            InventoryData.Add(new InventoryModel(){
+                Barcode = obj.Barcode,
+                Item  = obj.Item,
+                Price = obj.Price,
+                Quantity = obj.Quantity,
+                Status = obj.Status
+            });
+
+        }
+        StateHasChanged();
+    }
+
+#line default
+#line hidden
+#nullable disable
     }
 }
 #pragma warning restore 1591

@@ -5,3 +5,55 @@
 Welcome to your new app.
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Barcode</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var Current_Inventory in InventoryData){
+            <tr>
+                <td>@Current_Inventory.Item</td>
+                <td>@Current_Inventory.Barcode</td>
+                <td>@Current_Inventory.Price</td>
+                <td >@Current_Inventory.Quantity</td>
+                <td >@Current_Inventory.Status</td            
+                </tr>
+        }
+    </tbody>
+
+</table>
+
+
+@code{
+    @using System.Net.Http
+    @using System.Text
+    @using System.Net.Http.Json
+    @using System.Web
+    @using Newtonsoft.Json.Linq
+    @using Newtonsoft.Json
+    public List<InventoryModel> InventoryData = new();
+
+    protected override async Task OnInitializedAsync(){
+        using var client = new HttpClient();
+        var result = await client.GetStringAsync("http://0.0.0.0:800/Inventory/grab_Inventory");
+        JArray data = JArray.Parse(result);
+        foreach(dynamic obj in data){
+            InventoryData.Add(new InventoryModel(){
+                Barcode = obj.Barcode,
+                Item  = obj.Item,
+                Price = obj.Price,
+                Quantity = obj.Quantity,
+                Status = obj.Status
+            });
+
+        }
+        StateHasChanged();
+    }
+}

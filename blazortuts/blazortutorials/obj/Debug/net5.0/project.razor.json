@@ -8,138 +8,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1265029865,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -1991227614,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1722244404,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.FetchData",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -189420145,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.FetchData",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2105113590,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Index",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 350140072,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Index",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1418973734,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.App",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.App"
-        }
-      },
-      {
-        "HashCode": 349111887,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.App",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1475418096,
         "Kind": "Components.Component",
         "Name": "blazortutorials.Shared.SurveyPrompt",
@@ -318,6 +186,138 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazortutorials.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1418973734,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.App",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.App"
+        }
+      },
+      {
+        "HashCode": 349111887,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.App",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.App",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1722244404,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.FetchData",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -189420145,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.FetchData",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1265029865,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Counter",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1991227614,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Counter",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2105113590,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Index",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 350140072,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Index",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

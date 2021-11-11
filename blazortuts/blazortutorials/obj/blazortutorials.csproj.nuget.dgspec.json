@@ -47,6 +47,14 @@
               "target": "Package",
               "version": "[5.0.5, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "Remote.Linq.Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[*, )"
+            },
             "System.Net.Http.Json": {
               "target": "Package",
               "version": "[5.0.0, )"

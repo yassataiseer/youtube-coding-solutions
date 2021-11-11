@@ -7,6 +7,8 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
+      "Aqua.dll": "sha256-UMD6258toSLjHGMoAhN2Dpx05sylGwYSwMYHRXuEz+g=",
+      "Aqua.Newtonsoft.Json.dll": "sha256-6jD1nZBDg6m\/VNoAhzMHGdpNyqx9qtLQGC6yAeqnBmg=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-fRsos6COcWE1mv16iL1oDlrTVo0CyzWlANOV3GVPteM=",
       "Microsoft.AspNetCore.Components.dll": "sha256-fRGuHi4QM9T4jlY+wZqfSulM4Eok2jLzIYGAet4sIok=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-VUylFBr1e5Fa+IE1BebNrQhZSNQaweOyVi12K0HI4l4=",
@@ -29,6 +31,9 @@
       "Microsoft.Extensions.Primitives.dll": "sha256-f2PgoftqEkKRuuiAk6S1MHygOuqZBHzB0HOB3vR93TU=",
       "Microsoft.JSInterop.dll": "sha256-Giz1JvBiSQH0QF96qODveJMip7exQTDFunFNTkGgPsc=",
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-w0G2c9HerfjA2TOs+L4Ufnrt9MsR8b+nLA5\/yt+ytxg=",
+      "Newtonsoft.Json.dll": "sha256-cs8pHUurDt0IqbB8YXPh560au3q3J\/1wRL9jBddRVmE=",
+      "Remote.Linq.dll": "sha256-1N6CDgqbyIFXVtuKj4A\/kKKUKQFLMwaF79lakcOUXxg=",
+      "Remote.Linq.Newtonsoft.Json.dll": "sha256-Rtv0F+iI0PoDibiuHoILR3qzOHkENESmMj+aUvI4Lgk=",
       "System.IO.Pipelines.dll": "sha256-3ET+mpR7F058YRj9YaLHOVXBqOW6iUxtIpeiKPYw4PA=",
       "Microsoft.CSharp.dll": "sha256-CzBnrOQe+hf4qsqTuvJx2drZH7UgIouYaXG0I5cexAI=",
       "Microsoft.VisualBasic.Core.dll": "sha256-l6pYs841V7Trp06g9oDDtGIEbl3YPxXL4uZjstGRJh8=",
@@ -195,11 +200,11 @@
       "mscorlib.dll": "sha256-aRw41w\/QxOqc3NzhbK7UKf1zT6z\/oHtp9BlXl4JWwjM=",
       "netstandard.dll": "sha256-stWPH7tpmfc4JFroiKGKWcPfLQ+ALD6yQUXA9NiV0fQ=",
       "System.Private.CoreLib.dll": "sha256-PbMTdb+kswRpFmuD8S4hY70nkZ9LeYJg7y3wm7hj0CQ=",
-      "blazortutorials.dll": "sha256-M3olkgKjcd\/xHUGRO7HeUQnIJhbF1Y+ckqRTaSJyudA="
+      "blazortutorials.dll": "sha256-PeQXEBf\/hio8+lUKrG9GB9YbSRNVDy9dT6O7utmG5Pc="
     },
     "lazyAssembly": null,
     "pdb": {
-      "blazortutorials.pdb": "sha256-Wngdd2R3KTRjGkx9V+1ViDUJBG9b5FIRH8bno++7mp4="
+      "blazortutorials.pdb": "sha256-CbEkCNGIM\/21lvmJpkG0tw7qmOk65m4grXzKs6J8efk="
     },
     "runtime": {
       "dotnet.timezones.blat": "sha256-SQvzbzBfueaAxSKIKE1khBH02NH2MJJaWDBav\/S5MSs=",
