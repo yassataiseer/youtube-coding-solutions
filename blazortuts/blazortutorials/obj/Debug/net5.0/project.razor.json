@@ -8,6 +8,105 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 1265029865,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Counter",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1991227614,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Counter",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1722244404,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.FetchData",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.FetchData"
+        }
+      },
+      {
+        "HashCode": -189420145,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.FetchData",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.FetchData"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.FetchData",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -2105113590,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Index",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 350140072,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Index",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Index",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1475418096,
         "Kind": "Components.Component",
         "Name": "blazortutorials.Shared.SurveyPrompt",
@@ -190,6 +289,114 @@
         }
       },
       {
+        "HashCode": 249213434,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Shared.Tooltip",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Tooltip"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Shared.Tooltip"
+        }
+      },
+      {
+        "HashCode": -1050010273,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Shared.Tooltip",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Shared.Tooltip"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "ChildContent",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Metadata": {
+              "Common.PropertyName": "ChildContent",
+              "Components.ChildContent": "True"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Text",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "Text"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Shared.Tooltip",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 747244412,
+        "Kind": "Components.ChildContent",
+        "Name": "blazortutorials.Shared.Tooltip.ChildContent",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "Tooltip"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazortutorials.Shared.Tooltip.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1233434365,
+        "Kind": "Components.ChildContent",
+        "Name": "blazortutorials.Shared.Tooltip.ChildContent",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ChildContent",
+            "ParentTag": "blazortutorials.Shared.Tooltip"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazortutorials.Shared.Tooltip.ChildContent",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1418973734,
         "Kind": "Components.Component",
         "Name": "blazortutorials.App",
@@ -219,105 +426,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazortutorials.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -1722244404,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.FetchData",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -189420145,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.FetchData",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.FetchData",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 1265029865,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter"
-        }
-      },
-      {
-        "HashCode": -1991227614,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Pages.Counter"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -2105113590,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Index",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 350140072,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Index",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13036,6 +13144,11 @@
     {
       "FilePath": "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/Counter.razor",
       "TargetPath": "Pages\\Counter.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/yassa/vidscode/blazortuts/blazortutorials/Shared/Tooltip.razor",
+      "TargetPath": "Shared\\Tooltip.razor",
       "FileKind": "component"
     },
     {
