@@ -648,3 +648,7 @@
 /Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/RazorDeclaration/Shared/Tooltip.razor.g.cs
 /Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/Razor/Shared/Tooltip.razor.g.cs
 /Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/scopedcss/Shared/Tooltip.razor.rz.scp.css
+/Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/RazorDeclaration/Pages/CustomPage.razor.g.cs
+/Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/Razor/Pages/CustomPage.razor.g.cs
+/Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/RazorDeclaration/Shared/CustomLayout.razor.g.cs
+/Users/yassa/vidscode/blazortuts/blazortutorials/obj/Debug/net5.0/Razor/Shared/CustomLayout.razor.g.cs

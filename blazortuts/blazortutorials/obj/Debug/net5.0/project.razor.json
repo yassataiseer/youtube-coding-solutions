@@ -8,35 +8,35 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 1265029865,
+        "HashCode": -1418973734,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
+        "Name": "blazortutorials.App",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter"
+          "Common.TypeName": "blazortutorials.App"
         }
       },
       {
-        "HashCode": -1991227614,
+        "HashCode": 349111887,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.Pages.Counter",
+        "Name": "blazortutorials.App",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazortutorials.Pages.Counter"
+            "TagName": "blazortutorials.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Pages.Counter",
+          "Common.TypeName": "blazortutorials.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -107,6 +107,72 @@
         }
       },
       {
+        "HashCode": 1265029865,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Counter",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Counter"
+        }
+      },
+      {
+        "HashCode": -1991227614,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.Counter",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.Counter"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.Counter",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -1707412020,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.CustomPage",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "CustomPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.CustomPage"
+        }
+      },
+      {
+        "HashCode": 136200831,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Pages.CustomPage",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Pages.CustomPage"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Pages.CustomPage",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": -1475418096,
         "Kind": "Components.Component",
         "Name": "blazortutorials.Shared.SurveyPrompt",
@@ -156,102 +222,6 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "blazortutorials.Shared.SurveyPrompt",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 701953887,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Shared.MainLayout",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Shared.MainLayout"
-        }
-      },
-      {
-        "HashCode": -141100998,
-        "Kind": "Components.Component",
-        "Name": "blazortutorials.Shared.MainLayout",
-        "AssemblyName": "blazortutorials",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "blazortutorials.Shared.MainLayout"
-          }
-        ],
-        "BoundAttributes": [
-          {
-            "Kind": "Components.Component",
-            "Name": "Body",
-            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
-            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-            "Metadata": {
-              "Common.PropertyName": "Body",
-              "Components.ChildContent": "True"
-            }
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.Shared.MainLayout",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -270882648,
-        "Kind": "Components.ChildContent",
-        "Name": "blazortutorials.Shared.MainLayout.Body",
-        "AssemblyName": "blazortutorials",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazortutorials.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent"
-        }
-      },
-      {
-        "HashCode": -1521340307,
-        "Kind": "Components.ChildContent",
-        "Name": "blazortutorials.Shared.MainLayout.Body",
-        "AssemblyName": "blazortutorials",
-        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Body",
-            "ParentTag": "blazortutorials.Shared.MainLayout"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.None",
-          "Common.TypeName": "blazortutorials.Shared.MainLayout.Body",
-          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -397,35 +367,194 @@
         }
       },
       {
-        "HashCode": -1418973734,
+        "HashCode": 960083912,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.App",
+        "Name": "blazortutorials.Shared.CustomLayout",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "CustomLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.App"
+          "Common.TypeName": "blazortutorials.Shared.CustomLayout"
         }
       },
       {
-        "HashCode": 349111887,
+        "HashCode": -752938356,
         "Kind": "Components.Component",
-        "Name": "blazortutorials.App",
+        "Name": "blazortutorials.Shared.CustomLayout",
         "AssemblyName": "blazortutorials",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "blazortutorials.App"
+            "TagName": "blazortutorials.Shared.CustomLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "blazortutorials.App",
+          "Common.TypeName": "blazortutorials.Shared.CustomLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -910143890,
+        "Kind": "Components.ChildContent",
+        "Name": "blazortutorials.Shared.CustomLayout.Body",
+        "AssemblyName": "blazortutorials",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "CustomLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazortutorials.Shared.CustomLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -1502268437,
+        "Kind": "Components.ChildContent",
+        "Name": "blazortutorials.Shared.CustomLayout.Body",
+        "AssemblyName": "blazortutorials",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "blazortutorials.Shared.CustomLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazortutorials.Shared.CustomLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 701953887,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Shared.MainLayout",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Shared.MainLayout"
+        }
+      },
+      {
+        "HashCode": -141100998,
+        "Kind": "Components.Component",
+        "Name": "blazortutorials.Shared.MainLayout",
+        "AssemblyName": "blazortutorials",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "blazortutorials.Shared.MainLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "blazortutorials.Shared.MainLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -270882648,
+        "Kind": "Components.ChildContent",
+        "Name": "blazortutorials.Shared.MainLayout.Body",
+        "AssemblyName": "blazortutorials",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazortutorials.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": -1521340307,
+        "Kind": "Components.ChildContent",
+        "Name": "blazortutorials.Shared.MainLayout.Body",
+        "AssemblyName": "blazortutorials",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "blazortutorials.Shared.MainLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "blazortutorials.Shared.MainLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -13137,8 +13266,18 @@
       "FileKind": "component"
     },
     {
+      "FilePath": "/Users/yassa/vidscode/blazortuts/blazortutorials/Shared/CustomLayout.razor",
+      "TargetPath": "Shared\\CustomLayout.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/FetchData.razor",
       "TargetPath": "Pages\\FetchData.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "/Users/yassa/vidscode/blazortuts/blazortutorials/Pages/CustomPage.razor",
+      "TargetPath": "Pages\\CustomPage.razor",
       "FileKind": "component"
     },
     {
