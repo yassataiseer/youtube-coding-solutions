@@ -1,7 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/ImplementScene/3163782288_3300761159_598857351.mp4'
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/ImplementScene/2201830969_4277929304_3547395150.mp4'
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/ImplementScene/2201830969_3025685881_2697772861.mp4'
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/ImplementScene/2201830969_792180434_3712852159.mp4'
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/ImplementScene/2201830969_1302219762_1711903663.mp4'
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/ImplementScene/2201830969_1199764305_3667667940.mp4'

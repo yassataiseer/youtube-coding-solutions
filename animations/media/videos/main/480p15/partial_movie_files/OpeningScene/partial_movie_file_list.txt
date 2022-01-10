@@ -1,2 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:/Users/yassa/vidscode/animations/media/videos/main/480p15/partial_movie_files/OpeningScene/3163782288_2839631542_2877477264.mp4'
