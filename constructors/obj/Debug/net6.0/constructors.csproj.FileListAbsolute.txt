@@ -1,0 +1,15 @@
+/Users/yassa/vidscode/constructors/bin/Debug/net6.0/constructors
+/Users/yassa/vidscode/constructors/bin/Debug/net6.0/constructors.deps.json
+/Users/yassa/vidscode/constructors/bin/Debug/net6.0/constructors.runtimeconfig.json
+/Users/yassa/vidscode/constructors/bin/Debug/net6.0/constructors.dll
+/Users/yassa/vidscode/constructors/bin/Debug/net6.0/ref/constructors.dll
+/Users/yassa/vidscode/constructors/bin/Debug/net6.0/constructors.pdb
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.csproj.AssemblyReference.cache
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.GeneratedMSBuildEditorConfig.editorconfig
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.AssemblyInfoInputs.cache
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.AssemblyInfo.cs
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.csproj.CoreCompileInputs.cache
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.dll
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/ref/constructors.dll
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.pdb
+/Users/yassa/vidscode/constructors/obj/Debug/net6.0/constructors.genruntimeconfig.cache
